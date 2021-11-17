@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 FROM alpine
-RUN apk update && apk add git cmake make g++ python3 py3-pip bash
+RUN apk update && apk add git cmake make g++ python3 py3-pip bash openssl
 WORKDIR /opt
 RUN git clone https://github.com/LucaFulchir/libRaptorQ.git
 WORKDIR libRaptorQ
